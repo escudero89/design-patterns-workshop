@@ -27,73 +27,73 @@ Design patterns are reusable solutions to common problems in software design. Th
 1. **Singleton Pattern**
 
    - Ensures a class has only one instance and provides a global point of access to it.
-   - [Example Code](examples/creational/singleton)
+   - [Example Code](src/examples/creational/singleton)
 
 2. **Factory Method Pattern**
 
    - Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
-   - [Example Code](examples/creational/factory-method)
+   - [Example Code](src/examples/creational/factory-method)
 
 3. **Abstract Factory Pattern**
 
    - Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-   - [Example Code](examples/creational/abstract-factory)
+   - [Example Code](src/examples/creational/abstract-factory)
 
 4. **Builder Pattern**
 
    - Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
-   - [Example Code](examples/creational/builder)
+   - [Example Code](src/examples/creational/builder)
 
 5. **Prototype Pattern**
    - Creates new objects by copying an existing object, known as the prototype.
-   - [Example Code](examples/creational/prototype)
+   - [Example Code](src/examples/creational/prototype)
 
 ### Structural Patterns
 
 1. **Adapter Pattern**
 
    - Allows incompatible interfaces to work together.
-   - [Example Code](examples/structural/adapter)
+   - [Example Code](src/examples/structural/adapter)
 
 2. **Decorator Pattern**
 
    - Adds behavior to objects dynamically.
-   - [Example Code](examples/structural/decorator)
+   - [Example Code](src/examples/structural/decorator)
 
 3. **Facade Pattern**
 
    - Provides a simplified interface to a complex subsystem.
-   - [Example Code](examples/structural/facade)
+   - [Example Code](src/examples/structural/facade)
 
 4. **Proxy Pattern**
 
    - Provides a surrogate or placeholder for another object to control access to it.
-   - [Example Code](examples/structural/proxy)
+   - [Example Code](src/examples/structural/proxy)
 
 5. **Composite Pattern**
    - Composes objects into tree structures to represent part-whole hierarchies.
-   - [Example Code](examples/structural/composite)
+   - [Example Code](src/examples/structural/composite)
 
 ### Behavioral Patterns
 
 1. **Observer Pattern**
 
    - Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-   - [Example Code](examples/behavioral/observer)
+   - [Example Code](src/examples/behavioral/observer)
 
 2. **Strategy Pattern**
 
    - Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
-   - [Example Code](examples/behavioral/strategy)
+   - [Example Code](src/examples/behavioral/strategy)
 
 3. **Command Pattern**
 
    - Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
-   - [Example Code](examples/behavioral/command)
+   - [Example Code](src/examples/behavioral/command)
 
 4. **Chain of Responsibility Pattern**
    - Passes a request along a chain of handlers, each of which can handle the request or pass it to the next handler in the chain.
-   - [Example Code](examples/behavioral/chain-of-responsibility)
+   - [Example Code](src/examples/behavioral/chain-of-responsibility)
 
 ## Getting Started
 
