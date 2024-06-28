@@ -11,6 +11,7 @@ Welcome to the Singleton Pattern example! This folder contains a TypeScript impl
 - [Pros and Cons](#pros-and-cons)
 - [Usage](#usage)
 - [Getting Started](#getting-started)
+- [Related Design Patterns](#related-design-patterns)
 
 ## Introduction
 
@@ -64,6 +65,12 @@ node lib/src/examples/creational/singleton/pattern.js
 node lib/src/examples/creational/singleton/task.js
 node lib/src/examples/creational/singleton/result.js
 ```
+
+## Related Design Patterns
+
+- **Abstract Factory:** Often used together with Singleton to provide a single instance of a factory class.
+- **Builder:** Singleton can be used to ensure that only one instance of a builder is used.
+- **Prototype:** Singleton can be combined with the Prototype pattern by storing a single instance of a prototype.
 
 ---
 

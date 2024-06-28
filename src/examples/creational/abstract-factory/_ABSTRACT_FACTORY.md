@@ -11,6 +11,7 @@ Welcome to the Abstract Factory Pattern example! This folder contains a TypeScri
 - [Pros and Cons](#pros-and-cons)
 - [Usage](#usage)
 - [Getting Started](#getting-started)
+- [Related Design Patterns](#related-design-patterns)
 
 ## Introduction
 
@@ -74,6 +75,12 @@ node lib/src/examples/creational/abstract-factory/pattern.js
 node lib/src/examples/creational/abstract-factory/task.js
 node lib/src/examples/creational/abstract-factory/result.js
 ```
+
+## Related Design Patterns
+
+- **Factory Method:** Often used to implement the methods defined in Abstract Factory.
+- **Singleton:** Can be used with Abstract Factory to ensure a single instance of a factory class.
+- **Builder:** Can be used in conjunction with Abstract Factory to construct complex objects step by step.
 
 ---
 
