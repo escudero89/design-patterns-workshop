@@ -28,6 +28,8 @@ Creational Patterns focus on the mechanisms of object creation. These patterns a
 
 > **ELI5 Explanation:** Imagine you’re at a pizza restaurant, and you want to order a pizza. Instead of making the pizza yourself (which could get messy and complicated), you tell the chef what kind of pizza you want, and they handle the rest. Creational patterns are like that chef —they help you create different objects (like pizzas) without you having to know the details of how they’re made.
 
+#### Common Creational Patterns:
+
 1. **Singleton Pattern**
 
    - Ensures a class has only one instance and provides a global point of access to it.
@@ -58,6 +60,8 @@ Structural Patterns deal with the composition of classes or objects. These patte
 
 > **ELI5 Explanation:** Think of a Lego set. Structural patterns are like the different ways you can combine Lego pieces to build something new, like a house or a car. Even though the pieces are the same, the way you put them together can create entirely different structures. These patterns help you piece together your code in flexible ways, so you can build more complex things without starting from scratch.
 
+#### Common Structural Patterns:
+
 1. **Adapter Pattern**
 
    - Allows incompatible interfaces to work together.
@@ -87,6 +91,8 @@ Structural Patterns deal with the composition of classes or objects. These patte
 Behavioral Patterns focus on communication between objects. These patterns are concerned with algorithms and the assignment of responsibilities between objects. They describe not just patterns of objects or classes but also the patterns of communication between them.
 
 > **ELI5 Explanation:** Imagine you’re part of a team playing a game of soccer. Behavioral patterns are like the different strategies and rules your team follows to communicate and pass the ball. Everyone knows their role and how to interact with each other to achieve the goal. Similarly, these patterns help different parts of your code communicate and work together effectively to complete tasks.
+
+#### Common Behavioral Patterns:
 
 1. **Observer Pattern**
 
