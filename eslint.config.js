@@ -16,14 +16,6 @@ export default tseslint.config(
 	...tseslint.config({
 		extends: tseslint.configs.recommendedTypeChecked,
 		files: ["**/*.js", "**/*.ts"],
-		languageOptions: {
-			parserOptions: {
-				EXPERIMENTAL_useProjectService: {
-					allowDefaultProjectForFiles: ["./*.*s", "eslint.config.js"],
-					defaultProject: "./tsconfig.json",
-				},
-			},
-		},
 		rules: {
 			// These on-by-default rules don't work well for this repo and we like them off.
 			"no-constant-condition": "off",
