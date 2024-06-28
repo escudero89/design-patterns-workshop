@@ -119,8 +119,8 @@ To get started with this repository, clone it to your local machine and navigate
 
 ```bash
 git clone https://github.com/your-username/design-projects-workshop.git
-yarn
-yarn build
+pnpm
+pnpm build
 node build/... # Whatever you want to try!
 ```
 
