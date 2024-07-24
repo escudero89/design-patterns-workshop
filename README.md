@@ -118,10 +118,10 @@ Behavioral Patterns focus on communication between objects. These patterns are c
 To get started with this repository, clone it to your local machine and navigate to the example you want to explore. Each example contains its own README file with instructions on how to run and understand the code.
 
 ```bash
-git clone https://github.com/your-username/design-projects-workshop.git
+git clone https://github.com/escudero89/design-patterns-workshop.git
 pnpm
 pnpm build
-node build/... # Whatever you want to try!
+node lib/... # Whatever you want to try!
 ```
 
 ## Contributing
