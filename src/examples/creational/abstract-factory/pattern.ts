@@ -1,38 +1,38 @@
 interface Product {
-	operation(): string;
+    operation(): string;
 }
 
 class ConcreteProductA implements Product {
-	operation(): string {
-		return "Result of ConcreteProductA";
-	}
+    operation(): string {
+        return "Result of ConcreteProductA";
+    }
 }
 
 class ConcreteProductB implements Product {
-	operation(): string {
-		return "Result of ConcreteProductB";
-	}
+    operation(): string {
+        return "Result of ConcreteProductB";
+    }
 }
 
 abstract class Creator {
-	abstract factoryMethod(): Product;
+    abstract factoryMethod(): Product;
 
-	someOperation(): string {
-		const product = this.factoryMethod();
-		return `Creator: The same creator's code has just worked with ${product.operation()}`;
-	}
+    someOperation(): string {
+        const product = this.factoryMethod();
+        return `Creator: The same creator's code has just worked with ${product.operation()}`;
+    }
 }
 
 class ConcreteCreatorA extends Creator {
-	factoryMethod(): Product {
-		return new ConcreteProductA();
-	}
+    factoryMethod(): Product {
+        return new ConcreteProductA();
+    }
 }
 
 class ConcreteCreatorB extends Creator {
-	factoryMethod(): Product {
-		return new ConcreteProductB();
-	}
+    factoryMethod(): Product {
+        return new ConcreteProductB();
+    }
 }
 
 const creatorA = new ConcreteCreatorA();

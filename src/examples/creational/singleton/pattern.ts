@@ -1,20 +1,20 @@
 export class Singleton {
-	private static instance: Singleton;
+    private static instance: Singleton;
 
-	private constructor() {
-		// Private constructor ensures no external instantiation
-	}
+    private constructor() {
+        // Private constructor ensures no external instantiation
+    }
 
-	static getInstance(): Singleton {
-		if (!Singleton.instance) {
-			Singleton.instance = new Singleton();
-		}
-		return Singleton.instance;
-	}
+    static getInstance(): Singleton {
+        if (!Singleton.instance) {
+            Singleton.instance = new Singleton();
+        }
+        return Singleton.instance;
+    }
 
-	public someMethod(): void {
-		console.log("Singleton method called!");
-	}
+    public someMethod(): void {
+        console.log("Singleton method called!");
+    }
 }
 
 const instance1 = Singleton.getInstance();

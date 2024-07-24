@@ -6,15 +6,15 @@ Welcome to the Design Projects Workshop repository! This repository contains exa
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Design Patterns](#design-patterns)
-  - [Creational Patterns](#creational-patterns)
-  - [Structural Patterns](#structural-patterns)
-  - [Behavioral Patterns](#behavioral-patterns)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Code of Conduct](#code-of-conduct)
-- [License](#license)
+-   [Introduction](#introduction)
+-   [Design Patterns](#design-patterns)
+    -   [Creational Patterns](#creational-patterns)
+    -   [Structural Patterns](#structural-patterns)
+    -   [Behavioral Patterns](#behavioral-patterns)
+-   [Getting Started](#getting-started)
+-   [Contributing](#contributing)
+-   [Code of Conduct](#code-of-conduct)
+-   [License](#license)
 
 ## Introduction
 
@@ -32,27 +32,27 @@ Creational Patterns focus on the mechanisms of object creation. These patterns a
 
 1. **Singleton Pattern**
 
-   - Ensures a class has only one instance and provides a global point of access to it.
-   - [Example Code](src/examples/creational/singleton/_SINGLETON.md)
+    - Ensures a class has only one instance and provides a global point of access to it.
+    - [Example Code](src/examples/creational/singleton/_SINGLETON.md)
 
 2. **Factory Method Pattern**
 
-   - Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
-   - [Example Code](src/examples/creational/factory-method) (WIP)
+    - Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
+    - [Example Code](src/examples/creational/factory-method/_FACTORY_METHOD.md)
 
 3. **Abstract Factory Pattern**
 
-   - Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-   - [Example Code](src/examples/creational/abstract-factory/_ABSTRACT_FACTORY.md)
+    - Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+    - [Example Code](src/examples/creational/abstract-factory/_ABSTRACT_FACTORY.md)
 
 4. **Builder Pattern**
 
-   - Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
-   - [Example Code](src/examples/creational/builder) (WIP)
+    - Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+    - [Example Code](src/examples/creational/builder) (WIP)
 
 5. **Prototype Pattern**
-   - Creates new objects by copying an existing object, known as the prototype.
-   - [Example Code](src/examples/creational/prototype) (WIP)
+    - Creates new objects by copying an existing object, known as the prototype.
+    - [Example Code](src/examples/creational/prototype) (WIP)
 
 ### Structural Patterns
 
@@ -64,27 +64,27 @@ Structural Patterns deal with the composition of classes or objects. These patte
 
 1. **Adapter Pattern**
 
-   - Allows incompatible interfaces to work together.
-   - [Example Code](src/examples/structural/adapter) (WIP)
+    - Allows incompatible interfaces to work together.
+    - [Example Code](src/examples/structural/adapter) (WIP)
 
 2. **Decorator Pattern**
 
-   - Adds behavior to objects dynamically.
-   - [Example Code](src/examples/structural/decorator) (WIP)
+    - Adds behavior to objects dynamically.
+    - [Example Code](src/examples/structural/decorator) (WIP)
 
 3. **Facade Pattern**
 
-   - Provides a simplified interface to a complex subsystem.
-   - [Example Code](src/examples/structural/facade) (WIP)
+    - Provides a simplified interface to a complex subsystem.
+    - [Example Code](src/examples/structural/facade) (WIP)
 
 4. **Proxy Pattern**
 
-   - Provides a surrogate or placeholder for another object to control access to it.
-   - [Example Code](src/examples/structural/proxy) (WIP)
+    - Provides a surrogate or placeholder for another object to control access to it.
+    - [Example Code](src/examples/structural/proxy) (WIP)
 
 5. **Composite Pattern**
-   - Composes objects into tree structures to represent part-whole hierarchies.
-   - [Example Code](src/examples/structural/composite) (WIP)
+    - Composes objects into tree structures to represent part-whole hierarchies.
+    - [Example Code](src/examples/structural/composite) (WIP)
 
 ### Behavioral Patterns
 
@@ -96,22 +96,22 @@ Behavioral Patterns focus on communication between objects. These patterns are c
 
 1. **Observer Pattern**
 
-   - Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-   - [Example Code](src/examples/behavioral/observer) (WIP)
+    - Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+    - [Example Code](src/examples/behavioral/observer) (WIP)
 
 2. **Strategy Pattern**
 
-   - Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
-   - [Example Code](src/examples/behavioral/strategy) (WIP)
+    - Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+    - [Example Code](src/examples/behavioral/strategy) (WIP)
 
 3. **Command Pattern**
 
-   - Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
-   - [Example Code](src/examples/behavioral/command) (WIP)
+    - Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
+    - [Example Code](src/examples/behavioral/command) (WIP)
 
 4. **Chain of Responsibility Pattern**
-   - Passes a request along a chain of handlers, each of which can handle the request or pass it to the next handler in the chain.
-   - [Example Code](src/examples/behavioral/chain-of-responsibility) (WIP)
+    - Passes a request along a chain of handlers, each of which can handle the request or pass it to the next handler in the chain.
+    - [Example Code](src/examples/behavioral/chain-of-responsibility) (WIP)
 
 ## Getting Started
 
