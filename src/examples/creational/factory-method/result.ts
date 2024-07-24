@@ -1,18 +1,36 @@
 // Product interface
 interface Cake {
+    prepareIngredients(): void;
     bake(): void;
+    decorate(): void;
 }
 
 // Concrete Products
 class ChocolateCake implements Cake {
+    prepareIngredients(): void {
+        console.log("Preparing ingredients for Chocolate Cake.");
+    }
+
     bake(): void {
         console.log("Baking a Chocolate Cake.");
+    }
+
+    decorate(): void {
+        console.log("Decorating a Chocolate Cake.");
     }
 }
 
 class VanillaCake implements Cake {
+    prepareIngredients(): void {
+        console.log("Preparing ingredients for Vanilla Cake.");
+    }
+
     bake(): void {
         console.log("Baking a Vanilla Cake.");
+    }
+
+    decorate(): void {
+        console.log("Decorating a Vanilla Cake.");
     }
 }
 
@@ -22,7 +40,9 @@ abstract class CakeFactory {
 
     bakeCake(): void {
         const cake = this.createCake();
+        cake.prepareIngredients();
         cake.bake();
+        cake.decorate();
     }
 }
 
@@ -39,26 +59,45 @@ class VanillaCakeFactory extends CakeFactory {
     }
 }
 
-// Client code
-class Bakery {
-    bakeCake(flavor: string) {
-        let cakeFactory: CakeFactory;
+// Factory Registry
+class CakeFactoryRegistry {
+    private factories: { [key: string]: CakeFactory } = {};
 
-        if (flavor === "Chocolate") {
-            cakeFactory = new ChocolateCakeFactory();
-        } else if (flavor === "Vanilla") {
-            cakeFactory = new VanillaCakeFactory();
-        } else {
-            console.log("Unsupported cake flavor.");
-            return;
-        }
+    registerFactory(flavor: string, factory: CakeFactory): void {
+        this.factories[flavor] = factory;
+    }
 
-        cakeFactory.bakeCake();
+    getFactory(flavor: string): CakeFactory | null {
+        return this.factories[flavor] || null;
     }
 }
 
-const bakery = new Bakery();
+// Client code
+class Bakery {
+    private factoryRegistry: CakeFactoryRegistry;
+
+    constructor(factoryRegistry: CakeFactoryRegistry) {
+        this.factoryRegistry = factoryRegistry;
+    }
+
+    bakeCake(flavor: string) {
+        const cakeFactory = this.factoryRegistry.getFactory(flavor);
+        if (cakeFactory) {
+            cakeFactory.bakeCake();
+        } else {
+            console.log("Unsupported cake flavor.");
+        }
+    }
+}
+
+// Setup
+const factoryRegistry = new CakeFactoryRegistry();
+factoryRegistry.registerFactory("Chocolate", new ChocolateCakeFactory());
+factoryRegistry.registerFactory("Vanilla", new VanillaCakeFactory());
+
+const bakery = new Bakery(factoryRegistry);
 bakery.bakeCake("Chocolate");
 bakery.bakeCake("Vanilla");
 
-// The code now uses the Factory Method pattern, making it more flexible and easier to maintain.
+// The code now uses a Factory Registry to eliminate the if/else block entirely.
+// The Bakery class is even more decoupled from the specific implementations and is easier to extend.
