@@ -1,17 +1,17 @@
 class ConfigurationManager {
-	private settings: { [key: string]: string } = {};
+    private settings: { [key: string]: string } = {};
 
-	constructor() {
-		// Initialization code
-	}
+    constructor() {
+        // Initialization code
+    }
 
-	getSetting(key: string): string {
-		return this.settings[key];
-	}
+    getSetting(key: string): string {
+        return this.settings[key];
+    }
 
-	setSetting(key: string, value: string): void {
-		this.settings[key] = value;
-	}
+    setSetting(key: string, value: string): void {
+        this.settings[key] = value;
+    }
 }
 
 // Test the Singleton ConfigurationManager

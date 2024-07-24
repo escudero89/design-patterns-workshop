@@ -1,25 +1,25 @@
 class ConfigurationManager {
-	private static instance: ConfigurationManager;
-	private settings: { [key: string]: string } = {};
+    private static instance: ConfigurationManager;
+    private settings: { [key: string]: string } = {};
 
-	private constructor() {
-		// Private constructor ensures no external instantiation
-	}
+    private constructor() {
+        // Private constructor ensures no external instantiation
+    }
 
-	static getInstance(): ConfigurationManager {
-		if (!ConfigurationManager.instance) {
-			ConfigurationManager.instance = new ConfigurationManager();
-		}
-		return ConfigurationManager.instance;
-	}
+    static getInstance(): ConfigurationManager {
+        if (!ConfigurationManager.instance) {
+            ConfigurationManager.instance = new ConfigurationManager();
+        }
+        return ConfigurationManager.instance;
+    }
 
-	getSetting(key: string): string {
-		return this.settings[key];
-	}
+    getSetting(key: string): string {
+        return this.settings[key];
+    }
 
-	setSetting(key: string, value: string): void {
-		this.settings[key] = value;
-	}
+    setSetting(key: string, value: string): void {
+        this.settings[key] = value;
+    }
 }
 
 // Test the Singleton ConfigurationManager

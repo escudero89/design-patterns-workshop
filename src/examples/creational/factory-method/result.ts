@@ -1,61 +1,64 @@
 // Product interface
-interface Alert {
-    show(): void;
+interface Cake {
+    bake(): void;
 }
 
 // Concrete Products
-class WindowsAlert implements Alert {
-    show(): void {
-        console.log("Showing Windows alert.");
+class ChocolateCake implements Cake {
+    bake(): void {
+        console.log("Baking a Chocolate Cake.");
     }
 }
 
-class MacOSAlert implements Alert {
-    show(): void {
-        console.log("Showing macOS alert.");
+class VanillaCake implements Cake {
+    bake(): void {
+        console.log("Baking a Vanilla Cake.");
     }
 }
 
 // Creator abstract class
-abstract class AlertFactory {
-    abstract createAlert(): Alert;
+abstract class CakeFactory {
+    abstract createCake(): Cake;
 
-    showAlert(): void {
-        const alert = this.createAlert();
-        alert.show();
+    bakeCake(): void {
+        const cake = this.createCake();
+        cake.bake();
     }
 }
 
 // Concrete Creators
-class WindowsAlertFactory extends AlertFactory {
-    createAlert(): Alert {
-        return new WindowsAlert();
+class ChocolateCakeFactory extends CakeFactory {
+    createCake(): Cake {
+        return new ChocolateCake();
     }
 }
 
-class MacOSAlertFactory extends AlertFactory {
-    createAlert(): Alert {
-        return new MacOSAlert();
+class VanillaCakeFactory extends CakeFactory {
+    createCake(): Cake {
+        return new VanillaCake();
     }
 }
 
 // Client code
-function displayAlert(os: string) {
-    let alertFactory: AlertFactory;
+class Bakery {
+    bakeCake(flavor: string) {
+        let cakeFactory: CakeFactory;
 
-    if (os === "Windows") {
-        alertFactory = new WindowsAlertFactory();
-    } else if (os === "MacOS") {
-        alertFactory = new MacOSAlertFactory();
-    } else {
-        console.log("Unsupported OS.");
-        return;
+        if (flavor === "Chocolate") {
+            cakeFactory = new ChocolateCakeFactory();
+        } else if (flavor === "Vanilla") {
+            cakeFactory = new VanillaCakeFactory();
+        } else {
+            console.log("Unsupported cake flavor.");
+            return;
+        }
+
+        cakeFactory.bakeCake();
     }
-
-    alertFactory.showAlert();
 }
 
-displayAlert("Windows");
-displayAlert("MacOS");
+const bakery = new Bakery();
+bakery.bakeCake("Chocolate");
+bakery.bakeCake("Vanilla");
 
 // The code now uses the Factory Method pattern, making it more flexible and easier to maintain.
